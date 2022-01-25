@@ -31,9 +31,7 @@ class CourseDataFrame:
         return Drops_df, self.course
 
     def divisionFilter(self):
-        # Drops = self.dataframe['Course'] == self.course
-        # Drops_df = self.dataframe[Drops]
-        # Drops_df = Drops_df.reset_index(drop=True)
+
         Drops_df = self.dataframe
         Drops_df.sort_values(by=['Employee ID', 'Enrollment Add Date'], inplace=True)
         Drops_df = Drops_df.reset_index(drop=True)
