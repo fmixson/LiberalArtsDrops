@@ -92,6 +92,10 @@ class EOPSDrops:
 
         EOPS.to_excel(self.course + ' EOPSDrops.xlsx')
 
+class PlotENGL100Drops:
+
+    def __init__(self):
+
 # update_df = update_df.loc[update_df['Enrollment Drop Date'] != 0]
 # update_df = update_df.reset_index()
 # # update_df.index.name = 'y'
